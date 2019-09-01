@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="stylesheet" type="text/css" href="index.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<title>Keep</title>
+	<script type="text/javascript">		
+	</script>
+</head>
+<body onload="loadData();">
+	<div id="container"> 
+		<button onclick="openSearchDataModal();" class="searchBtn">Search
+			<i class="fa fa-search"></i>
+		</button>
+		<button onclick="saveDataModal();" class="note">Take a note
+			<i class="fa fa-plus"></i>
+		</button>
+		</br>	
+		<div id="display">
+			
+		</div>
+	</div>
+	<div class="modal" style="display:none">
+		<div class='modal-content'>
+			<div class="modal-heading">
+				<span class="closeBtn">&times;</span>
+				<h1 id="heading"></h1>
+			</div>
+			<div class="modal-body">
+				<textarea rows="2" cols="1000" placeholder="Type here....."></textarea>
+			</div>
+		</div>
+	</div>
+	<script src="main.js"></script>
+</body>
+</html>
